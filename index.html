@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pagos JmP</title>
+  <link rel="shortcut icon" href="img/jmp.png" type="image/x-icon">
+<link rel="stylesheet" href="Pagos-Nequi.css">
+
+</head>
+<body>
+
+
+ 
+    
+  <div class="container">
+    <img style="width: 60px;" src="img/jmp.png" alt="">
+    <h2>Realiza tu pago</h2>
+    <input type="number" id="monto" placeholder="¿Cuánto deseas pagar? (COP)" />
+
+    <button class="btn-mercado" onclick="pagarConMercadoPago()">Pagar con tarjeta, PSE, efectivo</button>
+    <button class="btn-nequi" onclick="mostrarModalNequi()">Pagar con Nequi</button>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="cerrarModal()">×</button>
+      <h3 id="modalTitulo">Modal</h3>
+      <p id="modalMensaje"></p>
+      <div id="modalOpciones" style="margin-top: 15px;"></div>
+    </div>
+  </div>
+
+
+  
+<script src="Pagos-Nequi.js"></script>
+
+</body>
+</html>
